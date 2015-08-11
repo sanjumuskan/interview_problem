@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<%# @user.first_name %>
+<%# @user.last_name %>
+<%# @user.email %>
+<%# @user.social_security_number %>
+<%# @user.as_json %>
+<div>
+	<h5>First Name : <%= @user.first_name%></h5>
+</div>
+<div>
+	<h5>Last Name : <%= @user.last_name%></h5>
+	
+</div>
+<div>
+	<h5>Email : <%= @user.email%></h5>
+</div>
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
